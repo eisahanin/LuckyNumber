@@ -1,13 +1,12 @@
 <?php
-$LuckyNumber = null;
+$LuckyNumber = 0;
 $expireDate = mktime(24, 59, 59, null, null, null);
-setcookie("lucky", "null", $expireDate, "/");
-global $HasVisited
-if ($HasVisited == true) {
-  // code...
-} else {
-  // code...
-}
+
+function LuckyGen() {
+  $GLOBALS['LuckyNumber'] = rand(0,100);
+  setcookie("lucky", $GLOBALS['LuckyNumber'], $GLOBALS['expireDate'], "/",);
+};
+
  ?>
 <!DOCTYPE html>
 <html>
@@ -18,28 +17,28 @@ if ($HasVisited == true) {
 <body>
   <header>
     <p>This Project uses Cookies! It will self-destruct at midnight. :)</p>
+    <a href="index.php">Index</a>
   </header>
-
+</br>
   <main>
-    <h1 id="num">
-      <?php
-      function LuckyGen() {
-        $GLOBALS['LuckyNumber'] = rand(0,100);
-        setcookie("lucky", $GLOBALS['LuckyNumber'], $GLOBALS['expireDate'], "/",);
-      }
-
-      switch ($_COOKIE["user"]) {
-        case (!isset($LuckyNumber)):
-          LuckyGen();
-          echo $LuckyNumber;
-          break;
-
-        case (isset($LuckyNumber)):
-          echo $LuckyNumber;
-          break;
-        }
-      ?>
+    <h1>
+      Let's find your Lucky Number!
     </h1>
+
+    <?php
+    if (isset($_COOKIE["user"])) {
+      echo "You got your Number!!!";
+      echo "<h1>" . $_COOKIE["lucky"] . "</h1>";
+      echo "Come back tomorrow for new number... after midnight.......";
+    }
+    else {
+    }
+    ?>
+
+    <p>Click to Find out!</p>;
+    <a href="lucky.php">Click Me!</a>;
+
+
   </main>
 
   <footer>
