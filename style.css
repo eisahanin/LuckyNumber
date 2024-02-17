@@ -1,4 +1,25 @@
 html {
 	color: #4D5A61;
-	font-family: 'Comic Sans', Arial;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	text-align: center;
+	margin: auto;
+	width: 80%;
+}
+
+header, footer {
+	background-color: black;
+	color: white;
+	height: 100px;
+}
+
+main {
+	height: 480px;
+}
+
+#home {
+	float: left;
+}
+
+#cookienotice {
+	float: right;
 }

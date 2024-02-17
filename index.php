@@ -1,23 +1,19 @@
 <?php
-$LuckyNumber = 0;
-$expireDate = mktime(24, 59, 59, null, null, null);
-
-function LuckyGen() {
-  $GLOBALS['LuckyNumber'] = rand(0,100);
-  setcookie("lucky", $GLOBALS['LuckyNumber'], $GLOBALS['expireDate'], "/",);
-};
-
+include 'functions.php';
  ?>
 <!DOCTYPE html>
 <html>
 <head>
   <link href="style.css" type="text/css" rel="stylesheet" />
   <script type="text/javascript" src="gen.js"></script>
+  <title>Daily Lucky Number</title>
 </head>
 <body>
   <header>
-    <p>This Project uses Cookies! It will self-destruct at midnight. :)</p>
-    <a href="index.php">Index</a>
+    <nav>
+      <a id="home" href="index.php">Home</a>
+      <p id="cookienotice">This Project use one (1) essential Cookie! It will self-destruct at midnight. :)</p>
+    </nav>
   </header>
 </br>
   <main>
@@ -26,18 +22,25 @@ function LuckyGen() {
     </h1>
 
     <?php
-    if (isset($_COOKIE["user"])) {
-      echo "You got your Number!!!";
+
+    if (isset($_COOKIE["lucky"])) {
+      echo "You got your Number!!!</br>";
+      echo "img</br>";
       echo "<h1>" . $_COOKIE["lucky"] . "</h1>";
-      echo "Come back tomorrow for new number... after midnight.......";
+      echo "Come back tomorrow for new number... after midnight....... </br>";
+      echo "img</br>";
+      echo "Unless...?</br>";
+      echo "You want a new one...?</br>";
+      echo "img</br>";
+      echo "<a href=". deleteNumber() . ">I want a new Number!!</a>";
     }
     else {
+      echo "img</br>";
+      echo "<p>Click to Find out!</p>";
+      echo "<a href=". $luckylink . ">Click Me!</a>";
     }
+
     ?>
-
-    <p>Click to Find out!</p>;
-    <a href="lucky.php">Click Me!</a>;
-
 
   </main>
 

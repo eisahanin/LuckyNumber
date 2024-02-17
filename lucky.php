@@ -1,5 +1,5 @@
 <?php
-include_once 'index.php';
+include 'functions.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,24 +8,30 @@ include_once 'index.php';
   <script type="text/javascript" src="gen.js"></script>
 </head>
 <body>
-
+  <header>
+    <nav>
+      <a id="home" href="index.php">Home</a>
+      <p id="cookienotice">This Project use one (1) essential Cookie! It will self-destruct at midnight. :)</p>
+    </nav>
+  </header>
+  </br>
   <main>
-      <h1 id="num">
         <?php
+
+        echo "string";
 
         if ($LuckyNumber == 0) {
           LuckyGen();
-          echo $LuckyNumber;
-          setcookie("user", "visitor", $GLOBALS['expireDate'], "/",);
         } else {
           echo $LuckyNumber;
         }
         ?>
-      </h1>
-
 
   </main>
 
+  <footer>
+    <p>This is a joke, do not take this seriously.</p>
+  </footer>
 
 </body>
 
