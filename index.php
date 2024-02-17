@@ -45,7 +45,7 @@ include 'functions.php';
   </main>
 
   <footer>
-    <p>This is a joke, do not take this seriously.</p>
+    <p>For legal reasons, this is a joke. Do not take this seriously.</p>
   </footer>
 </body>
 

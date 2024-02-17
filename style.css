@@ -1,14 +1,16 @@
-html {
-	color: #4D5A61;
+* {
+	background-color: black;
+	color: white;
 	font-family: "Comic Sans MS", "Comic Sans", cursive;
 	text-align: center;
+}
+html {
 	margin: auto;
 	width: 80%;
 }
 
 header, footer {
-	background-color: black;
-	color: white;
+	padding-top: 32px;
 	height: 100px;
 }
 
