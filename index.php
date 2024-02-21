@@ -6,6 +6,9 @@ include 'functions.php';
 <head>
   <link href="style.css" type="text/css" rel="stylesheet" />
   <script type="text/javascript" src="gen.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Daily Lucky Number</title>
 </head>
 <body>
@@ -20,7 +23,6 @@ include 'functions.php';
     <h1>
       Let's find your Lucky Number!
     </h1>
-
     <?php
 
     if (isset($_COOKIE["lucky"])) {
@@ -37,7 +39,7 @@ include 'functions.php';
     else {
       echo "img</br>";
       echo "<p>Click to Find out!</p>";
-      echo "<a href=". $luckylink . ">Click Me!</a>";
+      echo "<a href=". $luckylink . ">>Gimme a number!</a>";
     }
 
     ?>
