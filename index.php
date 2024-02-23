@@ -5,7 +5,8 @@ include 'functions.php';
 <html>
 <head>
   <link href="style.css" type="text/css" rel="stylesheet" />
-  <script type="text/javascript" src="gen.js"></script>
+  <script type="text/javascript" src="gen2.js">
+  </script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -27,28 +28,32 @@ include 'functions.php';
 
     if (isset($_COOKIE["lucky"])) {
       echo "You got your Number!!!</br>";
-      echo "img</br>";
+      echo '<img alt="a doodle a person with two hair buns, and a crystal ball, angry" src='. $img3 .' />';
       echo "<h1>" . $_COOKIE["lucky"] . "</h1>";
-      echo "Come back tomorrow for new number... after midnight....... </br>";
-      echo "img</br>";
-      echo "Unless...?</br>";
-      echo "You want a new one...?</br>";
-      echo "img</br>";
-      echo "<a href=". deleteNumber() . ">I want a new Number!!</a>";
+      echo "Come back tomorrow for new number... after midnight....... </br></br>";
+      echo '<div id="unless">
+        <img on alt="a doodle a person with two hair buns, and a crystal ball, calm" src='. $img4 .' /></br>
+        Unless...?</br>
+        <img alt="a doodle a person with two hair buns, and a crystal ball, furrowed brow and apologetic" src='. $img5 .' /></br>
+        You want a new one...?</br></br>
+        <a class="lucky" href='. deleteNumber() . '>I want a new Number!!</a></br>
+        </div>';
+      echo "<footer>
+        <p>For legal reasons, this is a joke. Do not take this seriously.</p>
+      </footer>";
     }
     else {
-      echo "img</br>";
-      echo "<p>Click to Find out!</p>";
-      echo "<a href=". $luckylink . ">>Gimme a number!</a>";
+      echo '<img alt="a doodle a person with two hair buns, and a crystal ball" src='. $img1 . ' /></br>';
+      echo '<a class="lucky" href='. $luckylink . '>>Gimme a number!</a>';
+      echo "</br>";
+      echo "<footer>
+        <p>For legal reasons, this is a joke. Do not take this seriously.</p>
+      </footer>";
     }
 
     ?>
 
   </main>
 
-  <footer>
-    <p>For legal reasons, this is a joke. Do not take this seriously.</p>
-  </footer>
 </body>
-
 </html>

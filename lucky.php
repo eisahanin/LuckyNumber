@@ -18,23 +18,26 @@ include 'functions.php';
   </header>
   </br>
   <main>
+    <img alt="a doodle a person with two hair buns, and a crystal ball, happy" src="2.png" />
+  </br>
         <?php
-
-        echo "string";
 
         if ($LuckyNumber == 0) {
           LuckyGen();
+          echo "</br>";
+          echo "<footer>
+            <p>For legal reasons, this is a joke. Do not take this seriously.</p>
+          </footer>";
         } else {
           echo $LuckyNumber;
+          echo "</br>";
+          echo "<footer>
+            <p>For legal reasons, this is a joke. Do not take this seriously.</p>
+          </footer>";
         }
         ?>
 
   </main>
 
-  <footer>
-    <p>This is a joke, do not take this seriously.</p>
-  </footer>
-
 </body>
-
 </html>

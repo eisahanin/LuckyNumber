@@ -3,6 +3,12 @@
 $LuckyNumber = 0;
 $expireDate = mktime(24, 59, 59, null, null, null);
 $luckylink = "lucky.php";
+$img1= "1.png";
+$img2= "2.png";
+$img3= "3.png";
+$img4= "4.png";
+$img5= "5.png";
+
 
 function LuckyGen() {
   $GLOBALS['LuckyNumber'] = rand(0,100);
@@ -17,5 +23,7 @@ function deleteNumber() {
   setcookie("lucky", $GLOBALS['LuckyNumber'], time() - 3600, "/",);
   $GLOBALS['LuckyNumber'] = 0;
 };
+
+
 
 ?>

@@ -7,10 +7,51 @@
 html {
 
 	background-color: black;
-	background: url("nnnoise.svg"), url("ffflux.svg") no-repeat center fixed, url('bg.gif') no-repeat center fixed;
+	background: url("ffflux.svg") no-repeat center fixed, url("nnnoise.svg"), url('bg.gif') no-repeat center fixed;
 	background-size: cover;
 	background-blend-mode: overlay;
+	animation: animateBg 4s alternate infinite ease;
 
+}
+
+@keyframes animateBg {
+	0% {
+		background: hsl(315, 100%, 72%) no-repeat center fixed, url("nnnoise.svg"), url('bg.gif') no-repeat center fixed;
+	 background-size: cover;
+	 background-blend-mode: overlay;
+	}
+	100% {
+	 background: hsl(227, 100%, 50%) no-repeat center fixed, url("nnnoise.svg"), url('bg.gif') no-repeat center fixed;
+	 background-size: cover;
+	 background-blend-mode: overlay;
+	}
+}
+
+#unless {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.unless {
+	opacity: 0;
+	visibility: visible;
+	animation: UnlessVisible 2s ease forwards;
+}
+
+@keyframes UnlessVisible {
+	0% {
+		visibility: hidden;
+			opacity: 0;
+	}
+
+1% {
+	visibility: visible;
+		opacity: 0;
+}
+ 100% {
+	 visibility: visible;
+	 opacity: 1;
+ };
 }
 
 a {
@@ -26,6 +67,10 @@ a:hover {
 	border-radius: 0px;
 }
 
+img {
+	width: 250px;
+	height: 250px;
+}
 body {
 	margin: auto;
 	width: 80%;
