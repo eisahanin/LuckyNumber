@@ -3,11 +3,11 @@
 $LuckyNumber = 0;
 $expireDate = mktime(24, 59, 59, null, null, null);
 $luckylink = "lucky.php";
-$img1= "1.png";
-$img2= "2.png";
-$img3= "3.png";
-$img4= "4.png";
-$img5= "5.png";
+$img1= "src/1.png";
+$img2= "src/2.png";
+$img3= "src/3.png";
+$img4= "src/4.png";
+$img5= "src/5.png";
 
 
 function LuckyGen() {

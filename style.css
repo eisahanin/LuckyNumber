@@ -7,7 +7,7 @@
 html {
 
 	background-color: black;
-	background: url("ffflux.svg") no-repeat center fixed, url("nnnoise.svg"), url('bg.gif') no-repeat center fixed;
+	background: url("src/ffflux.svg") no-repeat center fixed, url("src/nnnoise.svg"), url('src/bg.gif') no-repeat center fixed;
 	background-size: cover;
 	background-blend-mode: overlay;
 	animation: animateBg 4s alternate infinite ease;
@@ -16,12 +16,12 @@ html {
 
 @keyframes animateBg {
 	0% {
-		background: hsl(315, 100%, 72%) no-repeat center fixed, url("nnnoise.svg"), url('bg.gif') no-repeat center fixed;
+		background: hsl(315, 100%, 72%) no-repeat center fixed, url("src/nnnoise.svg"), url('src/bg.gif') no-repeat center fixed;
 	 background-size: cover;
 	 background-blend-mode: overlay;
 	}
 	100% {
-	 background: hsl(227, 100%, 50%) no-repeat center fixed, url("nnnoise.svg"), url('bg.gif') no-repeat center fixed;
+	 background: hsl(227, 100%, 50%) no-repeat center fixed, url("src/nnnoise.svg"), url('src/bg.gif') no-repeat center fixed;
 	 background-size: cover;
 	 background-blend-mode: overlay;
 	}

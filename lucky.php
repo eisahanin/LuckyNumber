@@ -18,7 +18,7 @@ include 'functions.php';
   </header>
   </br>
   <main>
-    <img alt="a doodle a person with two hair buns, and a crystal ball, happy" src="2.png" />
+    <img alt="a doodle a person with two hair buns, and a crystal ball, happy" src="src\2.png" />
   </br>
         <?php
 
