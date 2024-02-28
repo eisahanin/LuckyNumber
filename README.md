@@ -76,9 +76,15 @@ https://github.com/eisahanin/LuckyNumber/assets/43936927/0f4b7da4-ea4c-47d3-84d1
 
 https://github.com/eisahanin/LuckyNumber/assets/43936927/526c8eab-c3fa-4380-8750-af630b49adcd
 
-<p>Because I decided specifically to use PHP for the backend, HTML, CSS, and JavaScript will be used for the front-end. For the section where the website allows the user to create a new number, I wanted to make the section appear on scroll. Basic JavaScript in the grand scheme, but getting the trouble for me was animating it awake and making sure that the scroll worked on mobile as well. And to complete the vision, I added scribbles of the fortune teller to add some personality.</p>
+<p>Because I decided specifically to use PHP for the backend, HTML, CSS, and JavaScript will be used for the front-end. For the section where the website allows the user to create a new number, I wanted to make the section appear on scroll. Basic JavaScript in the grand scheme, but getting the trouble for me was animating it awake and making sure that the scroll worked on mobile as well. And to complete the vision, I added scribbles of myself as a fortune teller to add some personality.</p>
 
 https://github.com/eisahanin/LuckyNumber/assets/43936927/611d65d9-efd4-43f2-adc0-40df8e2eed09
+
+<p>I also added these custom loading screen animations as well.</p>
+
+![starting](https://github.com/eisahanin/LuckyNumber/assets/43936927/cbc0f7ea-259b-4fdf-bbc7-5971c6702a0a)
+
+![loading](https://github.com/eisahanin/LuckyNumber/assets/43936927/9f6efd24-0572-4b2b-8a38-12a40f468cb9)
 
 <h2>Final Result</h2>
 <p>After combining everything together, the page resulted in looking like so shown.</p>
