@@ -12,7 +12,12 @@ include 'functions.php';
 
   <title>Daily Lucky Number</title>
 </head>
+
 <body>
+  <div class="overlay">
+    <img src="src/start.gif" />
+  </div>
+
   <header>
     <nav>
       <a id="home" href="index.php">Home</a>
